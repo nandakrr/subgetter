@@ -75,8 +75,8 @@ def main(domain, output_file, censys_api_id, censys_api_secret):
 if __name__ == "__main__":
     args = cli.parser.parse_args()
 
-    censys_api_id = '6e85e9bd-d824-4de4-affd-4008693c7d82'
-    censys_api_secret = 'lW7aY5hrcq68iIm8ffyFjtTtTC8u9vwV'
+    censys_api_id = 'ENTER YOUR API ID'
+    censys_api_secret = 'ENTER YOUR API SECRET'
 
     if 'CENSYS_API_ID' in os.environ and 'CENSYS_API_SECRET' in os.environ:
         censys_api_id = os.environ['CENSYS_API_ID']
