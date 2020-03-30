@@ -7,6 +7,12 @@ rescue
    puts "Usage: ruby subgetter.rb domain"
    exit
 end
+  puts "Assetfinder Started..."
+  #Get it from https://github.com/tomnomnom/assetfinder
+  puts "+-------------------------------Subdomains By Assetfinder------------------------------------+"
+  system("assetfinder --subs-only #{domain}")
+  puts "Assetfinder Ended..."
+  puts
   puts "Censys Started..."
   #Get it from https://github.com/christophetd/censys-subdomain-finder
   puts "+--------------------------------Subdomains BY Censys--------------------------------------+"
